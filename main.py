@@ -1,7 +1,7 @@
 import importlib.util
 
 
-def execute_tutorial(tutorial_number):
+def execute_tutorial(tutorial_number: int):
     tutorial_module = f"tutorial_{tutorial_number}.main"
     try:
         module = importlib.import_module(tutorial_module)
@@ -12,4 +12,4 @@ def execute_tutorial(tutorial_number):
 if __name__ == "__main__":
     # tutorial_number = int(input("Enter tutorial number (e.g., 1, 2, 3): "))
     tutorial_number = 1
-    execute_tutorial(tutorial_number)
+    execute_tutorial(tutorial_number=tutorial_number)
